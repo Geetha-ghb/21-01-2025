@@ -4,7 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+         *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+.container1 {
+   display: flex;
+   background-color: brown;
+   justify-content: space-between;
+   padding:10px;
+}
+.orange{
+   background-color: orange;
+}
+.container2{
+   display: flex;
+   padding-right: 10px;
+   gap: 10px;
+}
+.yellow{
+   background-color: yellow;
+}
+.green {
+   background-color: green;
+}
+@media  screen and (width <= 500px) {
+   .yellow, .green {
+       display: none;
+   }
+   .container2 {
+       width: 60px;
+       background-color: white;
+   }
+}
+
+    </style>
 </head>
 <body>
     <div class="container1">
